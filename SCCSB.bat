@@ -42,13 +42,6 @@ fsutil usn readJournal C: csv > "%temp%\cloud.txt"
 if not exist "%temp%\cloud.txt" goto error
 findstr /b "0," "%temp%\cloud.txt"
 if "%errorlevel%" == "0" goto found
-if "%errorlevel%" == "1" goto history
-
-:history
-doskey /HISTORY > "%temp%\history.txt"
-if not exist "%temp%\history.txt" goto error
-findstr /i "FSUTIL USN DELETEJOURNAL /D C:" "%temp%\history.txt"
-if "%errorlevel%" == "0" goto found
 if "%errorlevel%" == "1" goto powershell
 
 :powershell
