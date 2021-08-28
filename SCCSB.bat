@@ -14,7 +14,7 @@ set grey=[38;5;241m
 
 ::gui
 timeout /t 1 /nobreak >nul
-echo                                                    %grey% Made by mp3#9999%green%
+echo                                                    %grey% Made by mp3#0253%green%
 echo                          ___                       ___ _             _    ___ _ _    _           
 echo                         / __^|_  _ _ __  ___ _ _   / __^| ^|___ _  _ __^| ^|  / __^| (_)__^| ^|_____ _ _ 
 echo                         \__ \ ^|^| ^| '_ \/ -_) '_^| ^| (__^| / _ \ ^|^| / _` ^| ^| (__^| ^| / _^| / / -_) '_^|
